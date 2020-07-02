@@ -1,1 +1,3 @@
-console.log();
+module.exports = {
+    store: require("./store")
+  };
