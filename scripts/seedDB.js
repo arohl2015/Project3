@@ -95,7 +95,42 @@ const storeSeed = [
     description: "Learn to quilt - creative hand-crafted gifts, original Americana kits and tools of the trade!",
     type: "Sewing"
   },
+
+  {
+    name: "Arizona Music Academy",
+    location: "Tempe",
+    phone: 480-705-0875,
+    url: "arizonamusicacademy.com",
+    description: "Interested in private music lessons? Learn from professional musicians registered with the State of Arizona.",
+    type: "Music"
+  },
+
+  {
+    name: "Guitar Gallery",
+    location: "Scottsdale",
+    phone: 480-948-1448,
+    url: "http://scottsdaleguitar.com",
+    description: "Learn to play the guitar with a customized curriculum from one of several teachers for only $30 a session!",
+    type: "Music"
+  },
   
+  {
+    name: "Slide Rock State Park",
+    location: "Sedona",
+    phone: 928-282-3034,
+    url: "https://azstateparks.com/slide-rock",
+    description: "Beat the summer heat and escape to Oak Creek Canyon for swimming, hiking, and relaxation.",
+    type: "Outdoor Life"
+  },
+
+  {
+    name: "Canyon Lake",
+    location: "Tortilla Flat",
+    phone: 480-288-9233,
+    url: "http://canyonlakemarina.com",
+    description: "Located less than an hour east of Phoenix, Canyon Lake offers boating, hiking, fishing, and camping.",
+    type: "Outdoor Life"
+  },
 ]
 
   
