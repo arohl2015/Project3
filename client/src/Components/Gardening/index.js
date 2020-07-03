@@ -14,16 +14,7 @@ class Gardening extends Component {
         this.setState({ hobbies: res.this.state.hobbies.filter (hobby => hobby.type === "Gardening")
         })
       .catch(err => console.log(err))
+      )}
 }
 
-  deleteBook = id => {
-    API.deleteBook(id)
-      .then(res => this.loadBooks())
-      .catch(err => console.log(err));
-  };
-}
-}
-
-
-
-  export default Gardening;
+export default Gardening;
