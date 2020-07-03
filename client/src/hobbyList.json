@@ -1,0 +1,31 @@
+[{
+        "id": 1,
+        "name": "Gardening",
+        "description": "Learn to grow a garden! Also learn to compost and make beautiful flower arrangements."
+    },
+    {
+        "id": 2,
+        "name": "Sewing",
+        "description": "Get the sewing machine out of your closet and set it up. Learn to sew and quilt here."
+    },
+    {
+        "id": 3,
+        "name": "Music",
+        "description": "Bring beautiful music into your life with music lessons."
+    },
+    {
+        "id": 4,
+        "name": "Art",
+        "description": "Learn pottery and drawing and painting - bring joy to your life! "
+    },
+    {
+        "id": 5,
+        "name": "Cooking",
+        "description": "Stop burning your food with cooking lessons. Cook like the Pros."
+    },
+    {
+        "id": 6,
+        "name": "Outdoor Life",
+        "description": "Get some fresh air - go hiking, biking and camping."
+    }
+]
