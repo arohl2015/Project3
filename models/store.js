@@ -12,4 +12,4 @@ const storeSchema = new Schema({
 
 const Store = mongoose.model("Store", storeSchema);
 
-module.exports = store;
+module.exports = Store;

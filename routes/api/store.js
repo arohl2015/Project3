@@ -8,9 +8,9 @@ router.route("/")
 
 // Matches with "/api/books/:id"
 router
-  .route("/:id")
+  .route("/:type")
   .get(storeController.findById)
   .put(storeController.update)
-  
+  .delete(storeController.remove)
 
 module.exports = router;
