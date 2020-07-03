@@ -1,8 +1,9 @@
 import React, {Component} from "react";
-import Jumbotron from "../components/Jumbotron";
-import hobbyList from "hobbyList.json";
-import Card from "../Components/Card";
-import Navbar from "../Components/Navbar";
+import Jumbotron from "../Jumbotron";
+import hobbyList from "../../hobbyList.json";
+import FrontCard from "../Card";
+import Navbar from "../Navbar";
+import Wrapper from "../Wrapper";
 
 
 class Home extends Component {
@@ -17,21 +18,23 @@ class Home extends Component {
     };
     render() {
         return ( 
-            <Navbar />
+            <div>
+             <Navbar />
             <Jumbotron />
             <Wrapper>
-
-     
-          
+   
             <div> {
                 this.state.hobbyList.map(hobby => ( 
-                    <Card id= {hobby.id} />
-
+                    <FrontCard name= {hobby.name}
+                    description= {hobby.description}
+                     />
                 ))
-            },
+            }
             </div>
             </Wrapper>
-        )
-    }
-}
+            </div>
+    
+        )}
+        }
+
 export default Home;
