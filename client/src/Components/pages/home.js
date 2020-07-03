@@ -1,19 +1,13 @@
 import React, {Component} from "react";
 import Jumbotron from "../Jumbotron";
 import hobbyList from "../../hobbyList.json";
-import FrontCard from "../Card";
+import FrontCard from "../FrontCard";
 import Navbar from "../Navbar";
 import Wrapper from "../Wrapper";
 
 
 class Home extends Component {
     state = {
-        //   name: "",
-        //   location: "",
-        //   phone: number,
-        //   url: "",
-        //   description: "",
-        //   type: "",
         hobbyList
     };
     render() {

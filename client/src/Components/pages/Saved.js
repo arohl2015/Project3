@@ -42,9 +42,9 @@ class Saved extends Component {
                 location={store.location}
                 phone={store.phone}
                 url={store.url}
-                description={book.description}
+                description={store.description}
                 type = {store.type}
-                deleteBook={this.deleteBook}
+                deleteStore={this.deleteStore}
               ></Buttons>
             
             ))}
@@ -55,3 +55,5 @@ class Saved extends Component {
     );
            }
         }
+
+        export default Saved;
