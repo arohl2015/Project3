@@ -131,6 +131,47 @@ const storeSeed = [
     description: "Located less than an hour east of Phoenix, Canyon Lake offers boating, hiking, fishing, and camping.",
     type: "Outdoor Life"
   },
+
+  {
+    name: "Arizona Art Supply",
+    location: "Phoenix",
+    phone: "602-264-9514",
+    url: "http://arizonaartsupply.com",
+    description: "Arizona Art Supply for high quality art materials and technical information. We offer the highest in-store student/instructor discount in Arizona.",
+    type: "Art"
+  },
+  {
+    name: "Mesa Arts Center",
+    location: "Mesa",
+    phone: 480-644-6520,
+    url: "http://mesaartscenter.com",
+    description: "Mesa Arts Center offers classes in Art, Pottery, Glass Blowing, Watercolor and more!",
+    type: "Art"
+  },
+  {
+    name: "Sur la Table",
+    location: "Phoenix Area",
+    phone: "480-292-9426",
+    url: "http://surlatable.com",
+    description: "Small hands on cooking classes and private events.",
+    type: "Cooking"
+  },
+  {
+    name: "Classic Cooking Academy",
+    location: "Scottsdale",
+    phone: 480-502-0177,
+    url: "http://ccacademy.edu",
+    description: "Practical and Pastry Series classes. Recreational cooking classes and Team Building and Private Events.",
+    type: "Cooking"
+  },
+  {
+    name: "Whisked Away",
+    location: "Phoenix",
+    phone: 480-330-6525,
+    url: "http://whiskedaway.net/calendar",
+    description: "Whether you’re new to cooking or a whiz in the kitchen, there are always tips to learn, recipes to take home and fun to be had in the kitchen!",
+    type: "Cooking"
+  },
 ]
 
   
