@@ -5,7 +5,8 @@ import Saved from "../src/Components/pages/Saved";
 import Home from "../src/Components/pages/Home";
 import backCards from "../src/Components/pages/backCards";
 
-function App() {
+class App extends Component {
+ render() {
   return (
     <Router>
       <div>
@@ -18,6 +19,7 @@ function App() {
       </div>
     </Router>
   );
+}
 }
 
 export default App;

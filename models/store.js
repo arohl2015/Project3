@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const storeSchema = new Schema({
   name: { type: String, required: true },
   location: { type: String, required: true },
-  phone: {type: number},
+  phone: {type: String},
   url: { type: String},
   description: {type: String, required: true},
   type: {type: String}

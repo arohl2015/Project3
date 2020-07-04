@@ -1,15 +1,13 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 const bcrypt = require('bcryptjs');
 mongoose.promise = Promise
 
-// Define userSchema
 const userSchema = new Schema({
-
-	username: { type: String, unique: false, required: false },
-	password: { type: String, unique: false, required: false }
-
-})
+    username: { type: String },
+    password: { type: String },
+    email: { type: String }
+});
 
 // Define schema methods
 userSchema.methods = {
@@ -34,5 +32,5 @@ userSchema.pre('save', function (next) {
 	}
 })
 
-const User = mongoose.model('User', userSchema)
-module.exports = User
+const User = mongoose.model("user", userSchema);
+module.exports = User;
