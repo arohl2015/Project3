@@ -1,6 +1,6 @@
-const db = require("../models");
+const db = require("../models/store");
 
-// Defining methods for the booksController
+// Defining methods for the storeController
 module.exports = {
   findAll: function(req, res) {
     db.Store
