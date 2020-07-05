@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import Jumbotron from "../Jumbotron";
-import hobbyList from "../../hobbyList.json";
-import FrontCard from "../FrontCard";
-import Navbar from "../Navbar";
-import Wrapper from "../Wrapper";
+import Jumbotron from "../Components/Jumbotron";
+import hobbyList from "../hobbyList.json";
+import FrontCard from "../Components/FrontCard";
+import Navbar from "../Components/Navbar";
+import Wrapper from "../Components/Wrapper";
 
 
 class Home extends Component {
