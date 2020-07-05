@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap';
+import Gardening from "../Gardening";
+
 
 class FrontCard extends Component {
-  handleButtonClick = event => {
+  handlebuttonClick = event => {
     event.preventDefault(); //write code for what we want it to do
     if (event.target.name === "Gardening") {
   console.log("Gardening");
+  return <Gardening />
     } else if (event.target.name === "Sewing") {
       console.log("Sewing");
     } else if (event.target.name === "Music") {
@@ -27,7 +30,7 @@ class FrontCard extends Component {
           <CardBody>
             <CardTitle>{this.props.name}</CardTitle>
             <CardText>{this.props.description}</CardText>
-            <Button handleButtonClick={this.handleButtonClick}>Learn More! </Button>
+            <Button onClick={this.handlebuttonClick}>Learn More! </Button>
           </CardBody>
         </Card>
       </div>

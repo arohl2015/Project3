@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import Jumbotron from "../Components/Jumbotron";
 import hobbyList from "../hobbyList.json";
 import FrontCard from "../Components/FrontCard";
-import Navbar from "../Components/Navbar";
 import Wrapper from "../Components/Wrapper";
 
 
@@ -13,14 +12,14 @@ class Home extends Component {
     render() {
         return ( 
             <div>
-             <Navbar />
             <Jumbotron />
             <Wrapper>
    
             <div> {
-                this.state.hobbyList.map(hobby => ( 
+                this.state.hobbyList.map((hobby, key) => ( 
                     <FrontCard name= {hobby.name}
                     description= {hobby.description}
+                    key = {key}
                      />
                 ))
             }

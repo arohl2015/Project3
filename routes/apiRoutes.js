@@ -5,14 +5,14 @@ const passport = require("../passport");
 const router = require("express").Router();
 
 router.route("/")
-  .get(storeController.findAll)
-  .post(storeController.create);
+  .get(controllers.store.findAll)
+  .post(controllers.store.create);
 
 router
   .route("/:type")
-  .get(storeController.findById)
-  .put(storeController.update)
-  .delete(storeController.remove)
+  .get(controllers.store.findById)
+  .put(controllers.store.update)
+  .delete(controllers.store.remove)
 
 
 //authentication routes
