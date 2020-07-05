@@ -5,7 +5,8 @@ import Gardening from "../Gardening";
 
 class FrontCard extends Component {
   handlebuttonClick = event => {
-    event.preventDefault(); //write code for what we want it to do
+    event.preventDefault();
+    console.log(event.target.name) //write code for what we want it to do
     if (event.target.name === "Gardening") {
   console.log("Gardening");
   return <Gardening />
@@ -30,7 +31,7 @@ class FrontCard extends Component {
           <CardBody>
             <CardTitle>{this.props.name}</CardTitle>
             <CardText>{this.props.description}</CardText>
-            <Button onClick={this.handlebuttonClick}>Learn More! </Button>
+            <Button onClick={this.handlebuttonClick} name={this.props.name}>Learn More! </Button>
           </CardBody>
         </Card>
       </div>
