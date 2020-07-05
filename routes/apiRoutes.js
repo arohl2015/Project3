@@ -1,4 +1,5 @@
-const path = require("path");
+const express = require("express");
+const db = require ("../models");
 const controllers = require("../controllers");
 const passport = require("../passport");
 const router = require("express").Router();
@@ -13,29 +14,25 @@ router
   .put(storeController.update)
   .delete(storeController.remove)
 
-  router.route("/signup")
-    .post(controllers.auth.create)
 
-router.post("/home", passport.authenticate('local'),
-    // { successRedirect: '/', failureRedirect: '/auth' }
-    (req, res) => {
-        console.log('logged in', req.user);
-        console.log(req.user.username);
-        var userInfo = {
-            username: req.user.username
-        };
-        res.send(userInfo);
-    }
-)
-
-router.get('/find', (req, res, next) => {
-    console.log('===== user!!======')
-    console.log(req.user)
-    if (req.user) {
-        res.json({ user: req.user })
+//authentication routes
+router.post("/signup", function (req, res) {
+    db.User.findOne({ email: req.body.email }, (err, user) => {
+    if (err) {
+    console.log(err);
+    } else if (user) {
+    res.json({ msg: "Account already exists!" });
     } else {
-        res.json({ user: null })
-    }
-})
+    db.User.create(req.body).then(function () {
+    res.redirect(307, "/login");
+            });
+          }
+        });
+      });
+      
+router.post("/login", passport.authenticate("local"), function (req, res) {
+    console.log("login hit");
+    res.json(req.user);
+      });
 
 module.exports = router;
