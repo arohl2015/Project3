@@ -1,28 +1,21 @@
 import React, { Component } from "react";
 import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap';
-import Gardening from "../Gardening";
+import Hobby from "../Hobby";
 
 
 class FrontCard extends Component {
-  handlebuttonClick = event => {
-    event.preventDefault();
-    console.log(event.target.name) //write code for what we want it to do
-    if (event.target.name === "Gardening") {
-  console.log("Gardening");
-  return <Gardening />
-    } else if (event.target.name === "Sewing") {
-      console.log("Sewing");
-    } else if (event.target.name === "Music") {
-      console.log("Music");
-    } else if (event.target.name === "Art") {
-      console.log("Art");
-    } else if (event.target.name === "Cooking") {
-      console.log("Cooking");
-    } else if (event.target.name === "Outdoor Life") {
-      console.log("Outdoor Life");
-    }
-  
+  constructor(props){
+    super(props);
+    this.state={type:null}
   }
+  handlebuttonClick = event => {
+
+    event.preventDefault(); //write code for what we want it to do
+    this.setState({type:event.target.name})
+    console.log(this.state)
+  } 
+
+  
   render() {
     return (
       <div>
@@ -31,12 +24,16 @@ class FrontCard extends Component {
           <CardBody>
             <CardTitle>{this.props.name}</CardTitle>
             <CardText>{this.props.description}</CardText>
-            <Button onClick={this.handlebuttonClick} name={this.props.name}>Learn More! </Button>
+
+            <Button name={this.props.name} onClick={this.handlebuttonClick}>Learn More! </Button>
+
           </CardBody>
-        </Card>
+      </Card>
+        {/* getting error here cannot read state of undefined */} 
+        {this.state.type ? <Hobby type={this.state.type}/> : ""}     
+
       </div>
     )
   }
 }
-
 export default FrontCard;

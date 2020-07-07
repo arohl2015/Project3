@@ -178,3 +178,4 @@ db.store.insertMany(storeSeed)
 .then(function () {
 console.log("record inserted!");
 })
+export default storeSeed
