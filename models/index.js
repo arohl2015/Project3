@@ -1,4 +1,5 @@
+const store = require("./store")
+const user = require("./user")
+
 module.exports = {
-    store: require("./store"),
-    user: require ("./user")
-}
+   Store: store, User: user}

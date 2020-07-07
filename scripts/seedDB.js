@@ -174,8 +174,8 @@ const storeSeed = [
   },
 ]
 
-db.store.insertMany(storeSeed)
+db.Store.insertMany(storeSeed)
 .then(function () {
 console.log("record inserted!");
 })
-export default storeSeed
+// export default storeSeed
