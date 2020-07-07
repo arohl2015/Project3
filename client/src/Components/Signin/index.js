@@ -33,7 +33,7 @@ function Signin() {
       <Form onSubmit={submitHandler}>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="exampleEmail" className="mr-sm-2">Email</Label>
-        <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" />
+        <Input type="email" name="email" id="exampleEmail" placeholder="some cool username or email" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="examplePassword" className="mr-sm-2">Password</Label>
