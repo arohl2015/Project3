@@ -1,9 +1,38 @@
 import React from 'react';
 import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import axios from "axios";
 
-const Signup = (props) => {
+function Signup() {
+
+	let username = "";
+	let password = "";
+	
+  
+	let submitHandler = (event) => {
+	  event.preventDefault();
+	  console.log(username.current.value);
+	  console.log(password.current.value);
+  
+	  let newUser = {
+		username: username.current.value,
+		password: password.current.value,
+	  };
+  
+	  console.log(newUser);
+  
+	  axios
+		.post("/signup", newUser)
+		.then(function (data) {
+		  console.log(data.data);
+		})
+		.catch(function (err) {
+		  console.log(err);
+		  history.push("/");
+		});
+	};
+
   return (
-    <Form>
+    <Form onSubmit={submitHandler}>
       <FormGroup row>
         <Label for="exampleUsername" sm={2}>Username</Label>
         <Col sm={10}>
