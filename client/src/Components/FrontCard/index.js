@@ -9,10 +9,12 @@ class FrontCard extends Component {
     this.state={type:null}
   }
   handlebuttonClick = event => {
+
     event.preventDefault(); //write code for what we want it to do
     this.setState({type:event.target.name})
     console.log(this.state)
   } 
+
   
   render() {
     return (
@@ -22,7 +24,9 @@ class FrontCard extends Component {
           <CardBody>
             <CardTitle>{this.props.name}</CardTitle>
             <CardText>{this.props.description}</CardText>
+
             <Button name={this.props.name} onClick={this.handlebuttonClick}>Learn More! </Button>
+
           </CardBody>
       </Card>
         {/* getting error here cannot read state of undefined */} 
