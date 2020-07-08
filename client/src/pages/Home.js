@@ -28,6 +28,7 @@ class Home extends Component {
   loadStore = () => {   
     API.findAll()
       .then(res => {
+          console.log("turkey")
         console.log(res);
         for (let index = 0; index < res.length; index++) {
             const element = res[index];
