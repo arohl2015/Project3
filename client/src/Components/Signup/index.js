@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios";
 
-function Signup() {
+function SignUp() {
 
 	let username = "";
 	let password = "";
@@ -10,12 +10,12 @@ function Signup() {
   
 	let submitHandler = (event) => {
 	  event.preventDefault();
-	  console.log(username.current.value);
-	  console.log(password.current.value);
+	  console.log(username);
+	  console.log(password);
   
 	  let newUser = {
-		username: username.current.value,
-		password: password.current.value,
+		username: username,
+		password: password
 	  };
   
 	  console.log(newUser);
@@ -27,7 +27,6 @@ function Signup() {
 		})
 		.catch(function (err) {
 		  console.log(err);
-		  history.push("/");
 		});
 	};
 
@@ -54,4 +53,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default SignUp;
