@@ -2,19 +2,20 @@ import React from 'react';
 import axios from "axios";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-function Signin() {
+function SignIn() {
     let username = "";
     let password = "";
   
     let submitHandler = (event) => {
       event.preventDefault();
-  
-      console.log(username.current.value);
-      console.log(password.current.value);
+    console.log(event.target[0].value);
+    console.log(event.target[1].value);
+      console.log(username);
+      console.log(password);
   
       let currentUser = {
-        username: username.current.value,
-        password: password.current.value,
+        username: event.target[0].value,
+        password: event.target[1].value
       };
   
       console.log(currentUser);
@@ -44,4 +45,4 @@ function Signin() {
     );
   }
 
-  export default Signin;
+  export default SignIn;

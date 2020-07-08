@@ -2,22 +2,22 @@ const express = require("express");
 const db = require ("../models");
 const controllers = require("../controllers");
 const passport = require("../passport");
-const router = require("express").Router();
+const router = express.Router();
 
 router.route("/")
   .get(controllers.store.findAll)
-  .post(controllers.store.create);
+//   .post(controllers.store.create);
 
-router
-  .route("/:type")
-  .get(controllers.store.findById)
-  .put(controllers.store.update)
-  .delete(controllers.store.remove)
+// router
+//   .route("/:type")
+//   .get(controllers.store.findById)
+//   .put(controllers.store.update)
+//   .delete(controllers.store.remove)
 
 
 //authentication routes
 router.post("/signup", function (req, res) {
-    db.User.findOne({ email: req.body.email }, (err, user) => {
+    db.User.findOne({ username: req.body.username }, (err, user) => {
     if (err) {
     console.log(err);
     } else if (user) {

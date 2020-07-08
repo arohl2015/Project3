@@ -8,7 +8,7 @@ const strategy = new LocalStrategy(
 	function(username, password, done) {
         console.log(username);
         console.log(password);
-		db.user.findOne({ username: username }, (err, user) => {
+		db.User.findOne({ username: username }, (err, user) => {
 			if (err) {
 				return done(err)
 			}
@@ -18,7 +18,7 @@ const strategy = new LocalStrategy(
 			if (!user.checkPassword(password)) {
 				return done(null, false, { message: "Incorrect password" })
 			}
-			return done(null, user)
+			return done(null, User)
 		})
 	}
 )

@@ -30,6 +30,7 @@ class Home extends Component {
       .then(res => {
           console.log("turkey")
         console.log(res);
+        console.log(this.state.hobbies)
         for (let index = 0; index < res.length; index++) {
             const element = res[index];
             // this.state.hobbies[element.type]

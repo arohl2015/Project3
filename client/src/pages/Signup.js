@@ -1,7 +1,8 @@
 import React from "react";
+import Signup from "../Components/Signup";
 import { Container } from 'reactstrap';
 
- function Signup () {
+ function signUp () {
   return (
     <>
       <Container>
@@ -12,4 +13,4 @@ import { Container } from 'reactstrap';
 
 }
 
-export default Signup
+export default signUp

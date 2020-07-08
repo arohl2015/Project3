@@ -2,7 +2,7 @@ import React from "react";
 import SignIn from "../Components/Signin";
 import { Container } from 'reactstrap';
 
-function Signin() {
+function signIn() {
   return (
     <>
       <Container>
@@ -12,4 +12,4 @@ function Signin() {
   );
 }
 
-export default Signin;
+export default signIn;

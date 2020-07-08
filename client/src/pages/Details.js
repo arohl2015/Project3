@@ -1,9 +1,7 @@
 import React, {Component} from "react";
 import Hobby from "../Components/Hobby";
 
-
-
-
+class Hobby extends Component {
 
 render() {
 
@@ -27,4 +25,7 @@ render() {
 
             </Wrapper>
             </div>
-        )
+        )}
+}
+
+export default Hobby;
