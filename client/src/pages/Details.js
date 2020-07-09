@@ -1,13 +1,18 @@
 import React, {Component} from "react";
 import Hobby from "../Components/Hobby";
+import Jumbotron from "../Components/Jumbotron";
+import Wrapper from "../Components/Wrapper";
 
-class Hobby extends Component {
+class HobbyDetails extends Component {
 
+    constructor(props){
+        super(props);  
+    }
 render() {
 
         return ( 
             <div>
-            <Jumbotron />
+            {/* <Jumbotron /> */}
             <Wrapper>
    
             <div> {
@@ -28,4 +33,4 @@ render() {
         )}
 }
 
-export default Hobby;
+export default HobbyDetails;
