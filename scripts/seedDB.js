@@ -113,7 +113,30 @@ const storeSeed = [
     description: "Learn to play the guitar with a customized curriculum from one of several teachers for only $30 a session!",
     type: "Music"
   },
-  
+  {
+    name: "Buchanan Music",
+    location: "Mesa",
+    phone: "480-461-9161",
+    url: "http://buchananmusic.net/",
+    description: "Ready to learn guitar, woodwinds, or brass? Call Buchanan to learn at your own pace.",
+    type: "Music"
+  },
+  {
+    name: "Linton Milano Music",
+    location: "Mesa",
+    phone: "480-833-7873",
+    url: "https://www.lintonmilano.com/",
+    description: "Wanting to learn the piano, violin, flute, or banjo? Call them for private 30 or 60 minute sessions.",
+    type: "Music"
+  },
+  {
+    name: "Phoenix Music Lessons",
+    location: "Phoenix",
+    phone: "602-955-2702",
+    url: "https://www.phoenixmusiclessons.com/",
+    description: "Enjoy the flexibility of taking lessons online or in person as many times as you want from qualified professionals all over the valley.",
+    type: "Music"
+  },
   {
     name: "Slide Rock State Park",
     location: "Sedona",
@@ -122,13 +145,36 @@ const storeSeed = [
     description: "Beat the summer heat and escape to Oak Creek Canyon for swimming, hiking, and relaxation.",
     type: "Outdoor Life"
   },
-
   {
     name: "Canyon Lake",
     location: "Tortilla Flat",
     phone: "480-288-9233",
     url: "http://canyonlakemarina.com",
     description: "Located less than an hour east of Phoenix, Canyon Lake offers boating, hiking, fishing, and camping.",
+    type: "Outdoor Life"
+  },
+  {
+    name: "Maricopa County Parks",
+    location: "Maricopa County",
+    phone: "602-506-2930",
+    url: "https://www.maricopacountyparks.net/",
+    description: "Looking for a park near you to get some fresh air? Check out the website above for locations and recreation available.",
+    type: "Outdoor Life"
+  },
+  {
+    name: "Arizona Scenic Tours",
+    location: "Phoenix",
+    phone: "480-459-7144",
+    url: "https://arizonascenictours.com/,
+    description: "Looking to get out of town for a day? Give them a call to choose from several tours around Arizona.",
+    type: "Outdoor Life"
+  },
+  {
+    name: "Phoenix Hiking Trails",
+    location: "Phoenix",
+    phone: "N/A",
+    url: "https://www.alltrails.com/us/arizona/phoenix",
+    description: "Check out this one-stop website for listings and ratings of trails all over the Phoenix metro area.",
     type: "Outdoor Life"
   },
 
