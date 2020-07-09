@@ -4,7 +4,7 @@ const controllers = require("../controllers");
 const passport = require("../passport");
 const router = express.Router();
 
-router.route("/")
+router.route("/api/store")
   .get(controllers.store.findAll)
 //   .post(controllers.store.create);
 

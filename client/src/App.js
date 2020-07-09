@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+import Details from "./pages/Details";
 // import Saved from "../src/Components/pages/Saved";
 import Home from "./pages/Home";
 // import backCards from "../src/Components/pages/backCards";
