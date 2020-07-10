@@ -6,6 +6,7 @@ import Wrapper from "../Components/Wrapper";
 import API from "../utils/API";
 import HobbyDetails from "./Details";
 
+
 class Home extends Component {
 
     // 
