@@ -5,8 +5,5 @@ export default {
   findAll: function() {
     return axios.get("/api/store");
   },
-
-  
-
 }
 
