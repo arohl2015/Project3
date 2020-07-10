@@ -23,6 +23,8 @@ router.post("/signup", function (req, res) {
     } else if (user) {
     res.json({ msg: "Account already exists!" });
     } else {
+        console.log(req.body);
+        
     db.User.create(req.body).then(function () {
     res.redirect(307, "/login");
             });

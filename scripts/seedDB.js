@@ -165,7 +165,7 @@ const storeSeed = [
     name: "Arizona Scenic Tours",
     location: "Phoenix",
     phone: "480-459-7144",
-    url: "https://arizonascenictours.com/,
+    url: "https://arizonascenictours.com/",
     description: "Looking to get out of town for a day? Give them a call to choose from several tours around Arizona.",
     type: "Outdoor Life"
   },
