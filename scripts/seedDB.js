@@ -187,6 +187,33 @@ const storeSeed = [
     type: "Art"
   },
   {
+    name: "Circle 6 Studio",
+    location: "Phoenix",
+    phone: "602-454-9342",
+    url: "http://circle6studios-com.3dcartstores.com/",
+    description: "Classes and workshops to learn how to make blown glass. We also have private events and parties - come join us! ",
+    type: "Art"
+  },
+
+{
+    name: "Raincharmer Beads",
+    location: "Phoenix",
+    phone: "602-625-4065",
+    url: "https://www.raincharmerbeads.com/",
+    description: "An assortment of classes for beginners through advanced. Learn to create amazing jewelry pieces!",
+    type: "Art"
+  },
+  {
+    name: "Mosaic Guys",
+    location: "Phoenix",
+    phone: "602-721-5587",
+    url: "https://mgstudiophx.com/",
+    description: "Learn to make beautiful mosaics. They have classes to familiarize you with the tolls and materials. Create a variety of different projects.",
+    type: "Art"
+  },
+
+
+  {
     name: "Mesa Arts Center",
     location: "Mesa",
     phone: "480-644-6520",
@@ -202,6 +229,23 @@ const storeSeed = [
     description: "Small hands on cooking classes and private events.",
     type: "Cooking"
   },
+  {
+  name: "L'Academie Baking & Cooking School",
+  location: "Mesa",
+  phone: "480-687-8888",
+  url: "http://www.lacademieschool.com/",
+  description: "Hands on baking classes and cooking classes deisgned to pique your interest.",
+  type: "Cooking"
+},
+{
+name: "The Phoenix Palate",
+    location: "Phoenix Area",
+    phone: "915-252-3168",
+    url: "https://www.thephoenixpalate.com/",
+    description: "Fun events - corporate cooking classes to cocktail tour bachelor parties. They offer food tours to find a new favorite restaurant!",
+    type: "Cooking"
+  },
+
   {
     name: "Classic Cooking Academy",
     location: "Scottsdale",
