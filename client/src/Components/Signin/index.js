@@ -1,21 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
+// import { Redirect } from 'react-router-dom'
 import axios from "axios";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+// import Home from "../../pages/Home";
 
-function SignIn() {
-    let username = "";
-    let password = "";
+class SignIn extends Component {
+    state = {
+    username: "",
+    password: ""
+    }
+    
   
-    let submitHandler = (event) => {
-      event.preventDefault();
+   submitHandler = (event) => {
+    event.preventDefault();
     console.log(event.target[0].value);
     console.log(event.target[1].value);
-      console.log(username);
-      console.log(password);
+    //   console.log(username);
+    //   console.log(password);
   
+
       let currentUser = {
-        username: event.target[0].value,
-        password: event.target[1].value
+        username: this.state.username,
+		password: this.state.password
       };
   
       console.log(currentUser);
@@ -24,25 +30,35 @@ function SignIn() {
         .post("/login", currentUser)
         .then(function (data) {
           console.log(data.data);
+        //   if (data.data._id) {
+        //        this.props.history.push("/")
+        //   }
         })
         .catch(function (err) {
           console.log(err);
         });
     };
-  
+
+    handleInputChange = event => {
+		var create = event.target.name
+		this.setState({ [create]: event.target.value });
+	  };
+
+    render () {
     return (
-      <Form onSubmit={submitHandler}>
+      <Form onSubmit={this.submitHandler}>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="exampleEmail" className="mr-sm-2">Email</Label>
-        <Input type="email" name="email" id="exampleEmail" placeholder="some cool username or email" />
+        <Label for="exampleUsername" className="mr-sm-2">Email</Label>
+        <Input type="username" onChange={this.handleInputChange} name="username" id="exampleUsername" placeholder="some cool username" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="examplePassword" className="mr-sm-2">Password</Label>
-        <Input type="password" name="password" id="examplePassword" placeholder="don't tell!" />
+        <Input type="password" onChange={this.handleInputChange} name="password" id="examplePassword" placeholder="don't tell!" />
       </FormGroup>
       <Button>Submit</Button>
     </Form>
     );
   }
+}
 
   export default SignIn;
