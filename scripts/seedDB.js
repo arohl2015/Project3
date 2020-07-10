@@ -50,7 +50,6 @@ const storeSeed = [
     description: "Classes are offered in the fall, spring and winter. They include composting, growing the Best Tomatoes and introduction to Beekeeping!",
     type: "Gardening"
   },
-  
   {
     name: "Jo-Ann Fabrics",
     location: "Valley wide",
@@ -59,7 +58,6 @@ const storeSeed = [
     description: "Jo-Anns provides a wide range of fabrics, plus sewing & arts & crafts supplies",
     type: "Sewing"
   },
-  
   {
     name: "Mad B's Quilt & Sew",
     location: "Mesa",
