@@ -19,7 +19,7 @@ class Hobby extends Component {
                     <CardTitle>{this.props.name}</CardTitle>
                     <CardTitle>{this.props.location}</CardTitle>
                     <CardTitle>{this.props.phone}</CardTitle>
-                    <CardText>{this.props.url}</CardText>
+                    <CardText><a href={this.props.url}>{this.props.url}</a></CardText>
                     <CardTitle>{this.props.description}</CardTitle>
                     {/* <Button onClick={this.handlebuttonClick}>Learn More! </Button> */}
                   </CardBody>
