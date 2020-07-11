@@ -17,7 +17,6 @@ const storeSeed = [
     description: "Desert Landscaping Classes in Phoenix. Earn a Desert Landscape School Credential upon completion of all six classes.",
     type: "Gardening"
   },
-
   {
     name: "Boyce Thompson Arboretum",
     location: "Superior",
@@ -66,7 +65,6 @@ const storeSeed = [
     description: "have shelves of over 2000 bolts of fabric for your projects, a variety of notions and patterns,  as well as embroidery designs and accessories.",
     type: "Sewing"
   },
-   
   {
     name: "The Sewing Asylum",
     location: "Phoenix",
@@ -75,7 +73,6 @@ const storeSeed = [
     description: "They teach individuals how to use a sewing machine.  If you are new to sewing or have a sewing machine that is new to you, they are there to help you understand your machine better so that you can utilize all the wonderful features that will help you in your creative journey. ",
     type: "Sewing"
   },
-  
   {
     name: "Sewing Nuts",
     location: "Phoenix",
@@ -84,7 +81,6 @@ const storeSeed = [
     description: "They have full sewing classes. You can take machine or basic sewing classes where you learn basic techniques for sewing success.  We also offer embroidery, quilting, crafts, home décor, garment, heirloom, pattern reading, doll making and many other classes, offered by a staff of wonderful teachers with lots of sewing experience in their areas of specialty. Check out our monthly class schedule and come join the fun! ",
     type: "Sewing"
   },
-  
   {
     name: "Quilter Bee",
     location: "Phoenix",
@@ -93,7 +89,6 @@ const storeSeed = [
     description: "Learn to quilt - creative hand-crafted gifts, original Americana kits and tools of the trade!",
     type: "Sewing"
   },
-
   {
     name: "Arizona Music Academy",
     location: "Tempe",
@@ -102,7 +97,6 @@ const storeSeed = [
     description: "Interested in private music lessons? Learn from professional musicians registered with the State of Arizona.",
     type: "Music"
   },
-
   {
     name: "Guitar Gallery",
     location: "Scottsdale",
@@ -175,7 +169,6 @@ const storeSeed = [
     description: "Check out this one-stop website for listings and ratings of trails all over the Phoenix metro area.",
     type: "Outdoor Life"
   },
-
   {
     name: "Arizona Art Supply",
     location: "Phoenix",
@@ -192,8 +185,7 @@ const storeSeed = [
     description: "Classes and workshops to learn how to make blown glass. We also have private events and parties - come join us! ",
     type: "Art"
   },
-
-{
+  {
     name: "Raincharmer Beads",
     location: "Phoenix",
     phone: "602-625-4065",
@@ -209,8 +201,6 @@ const storeSeed = [
     description: "Learn to make beautiful mosaics. They have classes to familiarize you with the tolls and materials. Create a variety of different projects.",
     type: "Art"
   },
-
-
   {
     name: "Mesa Arts Center",
     location: "Mesa",
@@ -234,8 +224,8 @@ const storeSeed = [
   url: "http://www.lacademieschool.com/",
   description: "Hands on baking classes and cooking classes deisgned to pique your interest.",
   type: "Cooking"
-},
-{
+  },
+  {
 name: "The Phoenix Palate",
     location: "Phoenix Area",
     phone: "915-252-3168",
@@ -243,7 +233,6 @@ name: "The Phoenix Palate",
     description: "Fun events - corporate cooking classes to cocktail tour bachelor parties. They offer food tours to find a new favorite restaurant!",
     type: "Cooking"
   },
-
   {
     name: "Classic Cooking Academy",
     location: "Scottsdale",
