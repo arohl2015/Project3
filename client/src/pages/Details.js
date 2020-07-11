@@ -13,7 +13,7 @@ class HobbyDetails extends Component {
             <div>
                 <Wrapper>
 
-                    <div> {
+                    <div style={{ padding: "25px" }}> {
                         this.props.hobbies.map((hobby, key) => (
                             <Hobby name={hobby.name}
                                    location={hobby.location}
