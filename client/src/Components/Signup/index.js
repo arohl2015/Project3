@@ -52,7 +52,7 @@ class SignUp extends Component {
 				</FormGroup>
 				<FormGroup check row>
 					<Col sm={{ size: 10, offset: 4 }}>
-						<Button>Submit</Button>
+						<Button>Sign Up!</Button>
 					</Col>
 				</FormGroup>
 			</Form>

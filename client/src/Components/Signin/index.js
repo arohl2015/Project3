@@ -12,8 +12,6 @@ class SignIn extends Component {
     event.preventDefault();
     console.log(event.target[0].value);
     console.log(event.target[1].value);
-    //   console.log(username);
-    //   console.log(password);
 
     let currentUser = {
       username: this.state.username,
@@ -46,18 +44,18 @@ class SignIn extends Component {
         <FormGroup row>
           <Label for="exampleUsername" sm={2}>Username</Label>
           <Col sm={10}>
-          <Input type="username" onChange={this.handleInputChange} name="username" id="exampleUsername" placeholder="some cool username" />
+          <Input type="username" onChange={this.handleInputChange} name="username" id="exampleUsername" placeholder="Enter your username" />
           </Col>        
         </FormGroup>
         <FormGroup row>
           <Label for="examplePassword" sm={2}>Password</Label>
           <Col sm={10}>
-          <Input type="password" onChange={this.handleInputChange} name="password" id="examplePassword" placeholder="don't tell!" />
+          <Input type="password" onChange={this.handleInputChange} name="password" id="examplePassword" placeholder="Don't tell!" />
           </Col>
         </FormGroup>
         <FormGroup check row>
 					<Col sm={{ size: 10, offset: 4 }}>
-						<Button>Submit</Button>
+						<Button>Login</Button>
 					</Col>
 				</FormGroup>
       </Form>
