@@ -12,7 +12,7 @@
     "build": "cd client && npm run build",
     "postinstall": "npm run seed",
     "heroku-postbuild": "npm run build",
-    "seed": "cd seeds && node seedDB.js"
+    "seed": "node scripts/seedDB.js"
   },
   "authors": "Joan Stoddard, April Rohl, Michael Stoddard",
   "license": "ISC",

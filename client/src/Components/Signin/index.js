@@ -44,13 +44,13 @@ class SignIn extends Component {
         <FormGroup row>
           <Label for="exampleUsername" sm={2}>Username</Label>
           <Col sm={10}>
-          <Input type="username" onChange={this.handleInputChange} name="username" id="exampleUsername" placeholder="Enter your username" />
+          <Input type="username" onChange={this.handleInputChange} name="username" id="exampleUsername" placeholder="Enter your Username" />
           </Col>        
         </FormGroup>
         <FormGroup row>
           <Label for="examplePassword" sm={2}>Password</Label>
           <Col sm={10}>
-          <Input type="password" onChange={this.handleInputChange} name="password" id="examplePassword" placeholder="Don't tell!" />
+          <Input type="password" onChange={this.handleInputChange} name="password" id="examplePassword" placeholder="Don't Tell!" />
           </Col>
         </FormGroup>
         <FormGroup check row>

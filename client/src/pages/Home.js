@@ -5,7 +5,7 @@ import FrontCard from "../Components/FrontCard";
 import Wrapper from "../Components/Wrapper";
 import API from "../utils/API";
 import HobbyDetails from "./Details";
-// import ParticleEffectButton from 'react-particle-effect-button'
+import ParticleEffectButton from 'react-particle-effect-button'
 
 class Home extends Component {
 
@@ -16,8 +16,8 @@ class Home extends Component {
             hobbyList: hobbyList,
             type: "",
             focus: false,
-            focusHobby: []
-            // hidden: true
+            focusHobby: [],
+            hidden: false
         }
 
         this.handlebuttonClick = this.handlebuttonClick.bind(this)
@@ -47,7 +47,7 @@ class Home extends Component {
                 var hobbyByTopic = res.data.filter(element => element.type === type);
                 console.log("***", hobbyByTopic);
                 this.setState({ focusHobby: hobbyByTopic })
-                this.setState({ focus: true })
+                this.setState({ focus: true,  })
             })
     }
     
@@ -74,13 +74,13 @@ class Home extends Component {
 
                 {this.state.focus &&
                     <Wrapper>
-                       <button onClick={this.resetButton} >Back To New Hobbies!</button>
-                        {/* <ParticleEffectButton onClick={this.resetButton} 
+                       {/* <button onClick={this.resetButton} >Back To New Hobbies!</button> */}
+                        <ParticleEffectButton  
         color='#121019'
         hidden={this.state.hidden}
       >
        <button onClick={this.resetButton}>Back To New Hobbies!</button> 
-      </ParticleEffectButton> */}
+      </ParticleEffectButton>
                         <HobbyDetails hobbies={this.state.focusHobby}></HobbyDetails>
                     </Wrapper>}
             </div>
