@@ -5,24 +5,11 @@ import FrontCard from "../Components/FrontCard";
 import Wrapper from "../Components/Wrapper";
 import API from "../utils/API";
 import HobbyDetails from "./Details";
-
+// import ParticleEffectButton from 'react-particle-effect-button'
 
 class Home extends Component {
 
-    // 
-    //     
-    //     this.state={hobbyList,
-    //     hobbies: { 
-    //     "Music": [],    
-    //     "Gardening": [],
-    //     "Sewing": [],
-    //     "Art": [],
-    //     "Outdoor Life": [],
-    //     "Cooking": [],
-    // }
-    // } 
-    // }
-    constructor(props) {
+        constructor(props) {
         super(props);
         this.state = {
             hobbies: [],
@@ -30,6 +17,7 @@ class Home extends Component {
             type: "",
             focus: false,
             focusHobby: []
+            // hidden: true
         }
 
         this.handlebuttonClick = this.handlebuttonClick.bind(this)
@@ -62,21 +50,14 @@ class Home extends Component {
                 this.setState({ focus: true })
             })
     }
-
-    // handlebuttonClick = event => {
-
-    //     event.preventDefault(); //write code for what we want it to do
-    //     this.setState({type:event.target.name})
-    //     console.log(this.state)
-    //   } 
-
+    
     render() {
 
         return (
             <div>
                 <Jumbotron />
 
-                {!this.state.focus &&
+                   {!this.state.focus &&
                     <Wrapper>
 
                         <div> {
@@ -93,7 +74,13 @@ class Home extends Component {
 
                 {this.state.focus &&
                     <Wrapper>
-                        <button onClick={this.resetButton} >Back To New Hobbies!</button>
+                       <button onClick={this.resetButton} >Back To New Hobbies!</button>
+                        {/* <ParticleEffectButton onClick={this.resetButton} 
+        color='#121019'
+        hidden={this.state.hidden}
+      >
+       <button onClick={this.resetButton}>Back To New Hobbies!</button> 
+      </ParticleEffectButton> */}
                         <HobbyDetails hobbies={this.state.focusHobby}></HobbyDetails>
                     </Wrapper>}
             </div>

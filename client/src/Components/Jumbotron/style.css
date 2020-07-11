@@ -1,3 +1,5 @@
 .jumbotron {
-    background-image: ("../assets/images/better.jpeg");
+    background-image: url("../../images/better2.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
