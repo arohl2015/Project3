@@ -254,5 +254,11 @@ name: "The Phoenix Palate",
 db.Store.insertMany(storeSeed)
 .then(function () {
 console.log("record inserted!");
-})
+//adding in below code to exist out of seeding process -hoping this fixes issue with heroku
+process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
 // export default storeSeed
