@@ -9,7 +9,6 @@ function FrontCard(props) {
     return (
       <div className="app">
         <Card>
-          {/* <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" /> */}
           <CardBody>
             <CardTitle>{props.name}</CardTitle>
             <CardText>{props.description}</CardText>
