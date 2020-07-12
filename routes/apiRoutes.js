@@ -4,6 +4,7 @@ const controllers = require("../controllers");
 const passport = require("../passport");
 const router = express.Router();
 
+//route to find all the "stores" in our database
 router.route("/api/store")
   .get(controllers.store.findAll)
 
