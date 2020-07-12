@@ -79,7 +79,7 @@ class Home extends Component {
         color='#121019'
         hidden={this.state.hidden}
       >
-       <button onClick={this.resetButton}>Back To New Hobbies!</button> 
+       <button color="danger" onClick={this.resetButton}>Back To New Hobbies!</button>{' '} 
       </ParticleEffectButton>
                         <HobbyDetails hobbies={this.state.focusHobby}></HobbyDetails>
                     </Wrapper>}

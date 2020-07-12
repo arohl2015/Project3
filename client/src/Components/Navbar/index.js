@@ -1,4 +1,5 @@
 import React from 'react';
+import "../../css/style.css"
 import {
   Navbar,
   NavbarBrand,
@@ -7,18 +8,19 @@ import {
   NavLink
 } from 'reactstrap';
 
+
 const Example = (props) => {
 
 return (
-  <div>
-    <Navbar color="light" light expand="md">
-      <NavbarBrand href="/">Welcome to Hobby Road</NavbarBrand>
+  <div className="Nav">
+    <Navbar color="dark" light expand="md">
+      <NavbarBrand className="nav1" href="/"><span  className="nav1">Welcome to Hobby Road</span></NavbarBrand>
       <Nav className="mr-auto" navbar>
-          <NavItem>
-          <NavLink href="/signup">Signup for an Account</NavLink>
+          <NavItem >
+          <NavLink href="/signup"><span  className="nav1">Signup for an Account</span></NavLink>
           </NavItem>
           <NavItem>
-          <NavLink href="/login">Login</NavLink>
+          <NavLink href="/login"> <span className="nav1">Login </span> </NavLink>
           </NavItem>
       </Nav>
     </Navbar>

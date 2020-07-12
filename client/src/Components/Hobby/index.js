@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Card, CardText, CardBody, CardTitle } from 'reactstrap';
+import "./style.css";
 
 
 class Hobby extends Component { 

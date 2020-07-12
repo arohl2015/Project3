@@ -1,0 +1,21 @@
+.app {
+    background-color: #b46868;
+  }
+  
+  .card {
+    background-color: rgb(194, 175, 175);
+    border-color: #000000;
+     border-width:10px;
+     border-style: inset;
+     font-family: 'Kanit', sans-serif;
+     font-size: 22px;
+  }
+  /* .Nav {
+    font:white;
+} */
+  .button {
+      background-color: green;
+  }
+  .nav1 {
+      color:white;
+  }
