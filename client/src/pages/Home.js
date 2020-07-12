@@ -5,25 +5,26 @@ import FrontCard from "../Components/FrontCard";
 import Wrapper from "../Components/Wrapper";
 import API from "../utils/API";
 import HobbyDetails from "./Details";
-import ParticleEffectButton from 'react-particle-effect-button'
 
 class Home extends Component {
 
         constructor(props) {
         super(props);
         this.state = {
+            //setting state of our initial components
             hobbies: [],
             hobbyList: hobbyList,
             type: "",
             focus: false,
             focusHobby: [],
-            hidden: false
         }
-
+        //in order to get this button clicks to work, we had to bind the onclick events
+        //typically this is not needed, but was fixed per TA assistance
         this.handlebuttonClick = this.handlebuttonClick.bind(this)
         this.resetButton = this.resetButton.bind(this)
     }
 
+    //focus state set to allow us to render all of our components on one page instead of two
     resetButton(type) {
         this.setState({ type: "", focus: false })
     }
@@ -74,13 +75,7 @@ class Home extends Component {
 
                 {this.state.focus &&
                     <Wrapper>
-                       {/* <button onClick={this.resetButton} >Back To New Hobbies!</button> */}
-                        <ParticleEffectButton  
-        color='#121019'
-        hidden={this.state.hidden}
-      >
-       <button onClick={this.resetButton}>Back To New Hobbies!</button> 
-      </ParticleEffectButton>
+                       <button onClick={this.resetButton} >Back To New Hobbies!</button>
                         <HobbyDetails hobbies={this.state.focusHobby}></HobbyDetails>
                     </Wrapper>}
             </div>

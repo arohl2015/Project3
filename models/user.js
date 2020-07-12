@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+//bcrypt hashes our passwords
 const bcrypt = require("bcryptjs");
 mongoose.promise = Promise
 

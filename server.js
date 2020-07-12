@@ -26,6 +26,7 @@ app.use(passport.session());
 app.use(apiRoutes);
 
 // If no API routes are hit, send the React app
+//had to comment this back in to deploy to heroku successfully
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
