@@ -1,11 +1,14 @@
 # Project 3 - Hobby Road
-Hobby Road is a full-stack MERN application created by our team for Project 3 of the University of Arizona Coding Bootcamp. This app was created to assist people in finding new activities and/or hobbies to pursue while we are all navigating this new normal. From gardening to art, we have covered a wide-range of interests that is sure to please any audience.
+Hobby Road is a full-stack MERN application created by our team for Project 3 of the University of Arizona Coding Bootcamp. This app was created to assist people in finding new activities and/or hobbies to pursue while we are all navigating this new normal. From gardening to art, we have covered a wide-range of interests that are sure to please any audience.
 
 ## Live Demo on Heroku:
 
 You can access the app via this link: [Welcome to Hobby Road](https://frozen-shore-51007.herokuapp.com/)
 
-## 
+## App Highlights:
+
+<img src="public/img/hobbyroad.gif" width="500" height="650"/>
+<br>
 
 ## If you'd like to start the application locally:
 Start by installing front and backend dependencies. While in this directory, run the following command:
@@ -38,6 +41,14 @@ Your app should now be running on <http://localhost:3000>. The Express server sh
 -   Google Fonts - https://fonts.google.com/
 -   Heroku - http://heroku.com
 -   mLab MongoDB - https://elements.heroku.com/addons/mongolab
+
+## Future Enhancements:
+As we work to further develop Hobby Road, we'd like to add the following enhancements:
+- Allowing stores, parks, and other vendors add their events to our website
+- A saved page for authenticated used to save their favorite hobbies
+- Having authenticated users be able to comment on classes/events they attended and interact with other user
+- Expanding our listed activities/hobbies beyond the six we have started with
+- Linking this to an external API such as EventBrite for users to localizer their hobby/activity search by city.
 
 ## Group Members:
 -   <a href="https://github.com/arohl2015" target="_blank"> April Rohl </a>

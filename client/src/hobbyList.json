@@ -1,12 +1,12 @@
 [{
         "id": 1,
         "name": "Gardening",
-        "description": "Learn to grow a garden! Here you can learn to compost, keep your garden lovely, and make beautiful flower arrangements. You can also earn a Deset Landscape School Credential."
+        "description": "Learn to grow a garden! Here you can learn to compost, keep your garden lovely, and make beautiful flower arrangements. You can also earn a Desert Landscape School Credential."
     },
     {
         "id": 2,
         "name": "Sewing",
-        "description": "Get the sewing machine out of your closet and set it up! Learn to sew and quilt here. You can take lessons to become a true clothes designer. You can also learn embrodiery and knitting - have fun!"
+        "description": "Get the sewing machine out of your closet and set it up! Learn to sew and quilt here. You can take lessons to become a true clothes designer. You can also learn embroidery and knitting - have fun!"
     },
     {
         "id": 3,
@@ -21,11 +21,11 @@
     {
         "id": 5,
         "name": "Cooking",
-        "description": "Stop burning your food! Learn to cook with cooking lessons. Cook like the Pros. There are small group classes and large events to help you get your baking on."
+        "description": "Stop burning your food! Learn to cook with cooking lessons and cook like the Pros. There are also small group classes and large events to help you get your baking on."
     },
     {
         "id": 6,
         "name": "Outdoor Life",
-        "description": "Get some fresh air - go hiking, biking and camping. There are guided tours, or grap a map and take yourself out to the wilderness. Find those lost waterfalls and beautiful streams - make some memories!"
+        "description": "Get some fresh air - go hiking, biking and camping. Take a guided tour, or grab a map and take yourself out to the wilderness. Find those lost waterfalls and beautiful streams - make some memories!"
     }
 ]
