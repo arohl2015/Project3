@@ -1,31 +1,31 @@
 [{
         "id": 1,
         "name": "Gardening",
-        "description": "Learn to grow a garden! Also learn to compost and make beautiful flower arrangements."
+        "description": "Learn to grow a garden! Here you can learn to compost, keep your garden lovely, and make beautiful flower arrangements. You can also earn a Deset Landscape School Credential."
     },
     {
         "id": 2,
         "name": "Sewing",
-        "description": "Get the sewing machine out of your closet and set it up. Learn to sew and quilt here."
+        "description": "Get the sewing machine out of your closet and set it up! Learn to sew and quilt here. You can take lessons to become a true clothes designer. You can also learn embrodiery and knitting - have fun!"
     },
     {
         "id": 3,
         "name": "Music",
-        "description": "Bring beautiful music into your life with music lessons."
+        "description": "Bring beautiful music into your life with music lessons. Play the instrument of your dreams - be the Rock Star you were meant to be!"
     },
     {
         "id": 4,
         "name": "Art",
-        "description": "Learn pottery and drawing and painting - bring joy to your life! "
+        "description": "Learn pottery, drawing, and painting. There are also classes for jewelry making and glass blowing - bring joy and imagination to your life."
     },
     {
         "id": 5,
         "name": "Cooking",
-        "description": "Stop burning your food with cooking lessons. Cook like the Pros."
+        "description": "Stop burning your food! Learn to cook with cooking lessons. Cook like the Pros. There are small group classes and large events to help you get your baking on."
     },
     {
         "id": 6,
         "name": "Outdoor Life",
-        "description": "Get some fresh air - go hiking, biking and camping."
+        "description": "Get some fresh air - go hiking, biking and camping. There are guided tours, or grap a map and take yourself out to the wilderness. Find those lost waterfalls and beautiful streams - make some memories!"
     }
 ]
