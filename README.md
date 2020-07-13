@@ -1,9 +1,11 @@
 # Project 3 - Hobby Road
-Hobby Road is a full-stack MERN application created by our team for Project 3 of the University of Arizona Coding Bootcamp. This app was created to assist people in finding new activities and/or hobbies to pursue while we are all navigating this new normal. From gardening to art, we have covered a wide-range of interests that we want to continue expanding on.  
+Hobby Road is a full-stack MERN application created by our team for Project 3 of the University of Arizona Coding Bootcamp. This app was created to assist people in finding new activities and/or hobbies to pursue while we are all navigating this new normal. From gardening to art, we have covered a wide-range of interests that is sure to please any audience.
 
 ## Live Demo on Heroku:
 
 You can access the app via this link: [Welcome to Hobby Road](https://frozen-shore-51007.herokuapp.com/)
+
+## 
 
 ## If you'd like to start the application locally:
 Start by installing front and backend dependencies. While in this directory, run the following command:
@@ -17,21 +19,25 @@ npm start
 Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
 
 ## Learn More about the Technologies Used:
--   MongoDB -
--   Express -
--   React -
--   React-router-dom -
--   React-router
--   Node -
--   Axios -
--   Bcryptjs -
--   Passport.js -
--   Passport Local -
--   Express Session -
--   If-env - 
--   Reactstrap -
--   CSS -
--   Heroku -
+-   MongoDB - https://www.mongodb.com/
+-   Express - https://www.npmjs.com/package/express
+-   React - https://reactjs.org/
+-   react-router-dom - https://www.npmjs.com/package/react-router-dom
+-   react-router - https://www.npmjs.com/package/react-router
+-   Node - https://nodejs.org/en/
+-   Axios - https://www.npmjs.com/package/axios
+-   body-parser - https://www.npmjs.com/package/body-parser
+-   bcryptjs - https://www.npmjs.com/package/bcryptjs
+-   Passport.js - http://www.passportjs.org/
+-   Passport-local - https://www.npmjs.com/package/passport-local
+-   Express-session - https://www.npmjs.com/package/express-session
+-   if-env - https://www.npmjs.com/package/if-env
+-   Reactstrap - https://reactstrap.github.io/
+-   CSS - https://www.w3schools.com/css/default.asp
+-   NTML - https://html.com/
+-   Google Fonts - https://fonts.google.com/
+-   Heroku - http://heroku.com
+-   mLab MongoDB - https://elements.heroku.com/addons/mongolab
 
 ## Group Members:
 -   <a href="https://github.com/arohl2015" target="_blank"> April Rohl </a>
@@ -39,4 +45,4 @@ Your app should now be running on <http://localhost:3000>. The Express server sh
 -   <a href="https://github.com/avalonmtg" target="_blank"> Joan Stoddard </a>
 
 #### Special Thanks:
-We would like to give a HUGE shoutout to our instruction, TA's, and tutors. We would not have been able to complete this project without their help and knowledge!
+We would like to give a HUGE shoutout to our instructor, TA's, and tutors. We would not have been able to complete this project without their help, knowledge, and patience!
