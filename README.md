@@ -7,7 +7,7 @@ You can access the app via this link: [Welcome to Hobby Road](https://frozen-sho
 
 ## App Highlights:
 
-<img src="public/img/hobbyroad.gif" width="500" height="650"/>
+<img src="public/img/hobbyroad.gif" width="350" height="350"/>
 <br>
 
 ## If you'd like to start the application locally:
